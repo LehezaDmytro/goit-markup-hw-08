@@ -1,0 +1,37 @@
+/* Section futures styles */
+
+.features__list {
+    display: flex;
+    gap: 30px;
+}
+
+.features__item {
+    width: 270px;
+}
+
+.features__icon-container {
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: 120px;
+
+    background-color: #f5f4fa;
+    border-radius: 4px;
+}
+
+.features__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.features__description {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--secondary-text-color);
+}
