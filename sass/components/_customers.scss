@@ -1,16 +1,16 @@
 /* Section customers styles*/
 
 .customers__title {
-    margin-bottom: 50px;
+    @extend %title;
 
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    color: var(--primery-text-color);
+    @media screen and (min-width: 1200px) {
+        @include title (50px, 36px, 1.16)
+    }
 }
 
 .customers__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 }
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
 
     color: #afb1b8;
@@ -35,6 +35,13 @@
     &:focus {
         color: var(--accent-color);
         border-color: var(--accent-color);
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 226px;       
+    }
+    @media screen and (min-width: 1200px) {
+        width: 170px;       
     }
 }
 

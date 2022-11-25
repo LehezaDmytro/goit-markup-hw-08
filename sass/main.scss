@@ -1,5 +1,7 @@
 // Veriables styles
 @import 'utils/variables';
+@import 'utils/placeholders';
+@import 'utils/mixins';
 
 // Base styles
 @import 'base/base';
@@ -21,3 +23,4 @@
 @import 'components/backdrop';
 @import 'components/modal';
 @import 'components/modal-form';
+@import 'components/mobile-menu';

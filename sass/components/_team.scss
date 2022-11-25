@@ -5,15 +5,22 @@
 }
 
 .team__title {
-    margin-bottom: 50px;
+    @extend %title;
 
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
+    @media screen and (min-width: 1200px) {
+        @include title (50px, 36px, 1.16)
+        // margin-bottom: 50px;
+
+        // font-size: 36px;
+        // line-height: 1.16;
+        
+    }
 }
 
 .team__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -28,6 +35,13 @@
 .team__img {
     display: block;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 450px;
+    }
+     @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+    }
 }
 
 /* Cards with photos, names and titles of professions */

@@ -1,0 +1,6 @@
+@mixin title ($mb, $fs, $lh){
+    margin-bottom: $mb;
+    
+    font-size: $fs;
+    line-height: $lh;
+}
