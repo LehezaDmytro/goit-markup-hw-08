@@ -26,6 +26,12 @@ body {
     color: var(--primery-text-color);
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .container {
    
     padding-right: 15px;
@@ -57,3 +63,4 @@ body {
         padding-bottom: 94px;
     }
 }
+

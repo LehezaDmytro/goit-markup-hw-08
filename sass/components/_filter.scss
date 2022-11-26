@@ -1,8 +1,13 @@
 .filter {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 767px) {
+        justify-content: left;
+    }
 }
 
 .filter__button {

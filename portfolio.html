@@ -64,6 +64,15 @@
             </a>
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Main -->
@@ -95,7 +104,7 @@
                     class="projects__img"
                     src="images/portfolio/portfolio1.jpg"
                     alt=""
-                    width="370"
+                    width="290"
                   />
                   <div class="projects__overlay">
                     <p class="projects__overlay-text">
@@ -119,7 +128,7 @@
                     class="projects__img"
                     src="images/portfolio/portfolio2.jpg"
                     alt=""
-                    width="370"
+                    width="290"
                   />
                   <div class="projects__overlay">
                     <p class="projects__overlay-text">
@@ -145,7 +154,7 @@
                     class="projects__img"
                     src="images/portfolio/portfolio3.jpg"
                     alt=""
-                    width="370"
+                    width="290"
                   />
                   <div class="projects__overlay">
                     <p class="projects__overlay-text">
@@ -169,7 +178,7 @@
                     class="projects__img"
                     src="images/portfolio/portfolio4.jpg"
                     alt=""
-                    width="370"
+                    width="290"
                   />
                   <div class="projects__overlay">
                     <p class="projects__overlay-text">
@@ -193,7 +202,7 @@
                     class="projects__img"
                     src="images/portfolio/portfolio5.jpg"
                     alt=""
-                    width="370"
+                    width="290"
                   />
                   <div class="projects__overlay">
                     <p class="projects__overlay-text">
@@ -217,7 +226,7 @@
                     class="projects__img"
                     src="images/portfolio/portfolio6.jpg"
                     alt=""
-                    width="370"
+                    width="290"
                   />
                   <div class="projects__overlay">
                     <p class="projects__overlay-text">
@@ -241,7 +250,7 @@
                     class="projects__img"
                     src="images/portfolio/portfolio7.jpg"
                     alt=""
-                    width="370"
+                    width="290"
                   />
                   <div class="projects__overlay">
                     <p class="projects__overlay-text">
@@ -265,7 +274,7 @@
                     class="projects__img"
                     src="images/portfolio/portfolio8.jpg"
                     alt=""
-                    width="370"
+                    width="290"
                   />
                   <div class="projects__overlay">
                     <p class="projects__overlay-text">
@@ -289,7 +298,7 @@
                     class="projects__img"
                     src="images/portfolio/portfolio9.jpg"
                     alt=""
-                    width="370"
+                    width="290"
                   />
                   <div class="projects__overlay">
                     <p class="projects__overlay-text">
@@ -413,5 +422,59 @@
         </form>
       </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="modal__icon" width="24" height="24" viewBox="2 1 15 14">
+          <use href="./images/icons.svg#icon-close-back"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a href="./index.html" class="mobile-menu__link">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a
+            href="./portfolio.html"
+            class="mobile-menu__link mobile-menu--active"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a href="" class="mobile-contacts__link accent">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a href="" class="mobile-contacts__link">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">Instagram</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">Twitter</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">Facebook</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
