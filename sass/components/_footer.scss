@@ -16,10 +16,6 @@
         flex-wrap: wrap;
         gap: 0;
     }
-    @media screen and (min-width: 1200px) {
-        flex-direction: row;
-        gap: 0;
-    }
 }
 
 /* Footer logo */
@@ -27,7 +23,8 @@
 .logo-and-adress {
     text-align: center;
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        margin-bottom: 60px;
         width: 369px;
     }
 
@@ -86,6 +83,7 @@
     text-align: center;
 
     @media screen and (min-width: 768px) and (max-width: 1199px){
+        margin-bottom: 60px;
         width: 369px;
     }
      @media screen and (min-width: 1200px) {

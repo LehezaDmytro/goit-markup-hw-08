@@ -129,11 +129,16 @@
 }
 
 .modal-form__agreement-text {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     color: var(--secondary-text-color);
 
     user-select: none;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .modal-form__link {

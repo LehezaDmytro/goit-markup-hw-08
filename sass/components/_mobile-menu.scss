@@ -94,8 +94,13 @@
 
 .mobile-contacts__item {
     & .accent{
-        font-size: 34px;
+        font-size: 27px;
         color: var(--accent-color);
+
+        @media screen and (min-width: 480px) {
+            font-size: 34px;
+            
+        }
     }
     &:not(:last-child) {
         margin-bottom: 32px;
@@ -115,10 +120,14 @@
 
     &__link {
         font-weight: 500;
-        font-size: 18px;
+        font-size: 12px;
         line-height: 1.22;
         letter-spacing: 0.02em;
         color: var(--accent-color);
+
+        @media screen and (min-width: 480px) {
+            font-size: 18px;
+        }
     }
 }
 
